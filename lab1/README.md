@@ -24,6 +24,6 @@
 - task9.cpp — 1/sqrt(1+x)
 - task15.cpp — arth x
 - 
-## Скриншоты
+## Скриншот
 <img width="857" height="155" alt="image" src="https://github.com/user-attachments/assets/667b2d0b-d8aa-4b4d-8291-d58ab8834633" />
 
