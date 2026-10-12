@@ -27,8 +27,8 @@ void ReadConsoleSize()
     }
 }
 
-// Ââîä öåëîãî ÷èñëà â äèàïàçîíå [minV, maxV]
-// Ïîâòîðÿåò çàïðîñ ïîêà íå ââåäåòñÿ êîððåêòíîå ÷èñëî
+// Ð’Ð²Ð¾Ð´ Ñ†ÐµÐ»Ð¾Ð³Ð¾ Ñ‡Ð¸ÑÐ»Ð° Ð² Ð´Ð¸Ð°Ð¿Ð°Ð·Ð¾Ð½Ðµ [minV, maxV]
+// ÐŸÐ¾Ð²Ñ‚Ð¾Ñ€ÑÐµÑ‚ Ð·Ð°Ð¿Ñ€Ð¾Ñ Ð¿Ð¾ÐºÐ° Ð½Ðµ Ð²Ð²ÐµÐ´ÐµÑ‚ÑÑ ÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾
 int readInt(string name, int minV, int maxV)
 {
     int value;
@@ -40,8 +40,8 @@ int readInt(string name, int minV, int maxV)
         if (cin && value >= minV && value <= maxV)
             return value;
 
-        cout << "  Îøèáêà: íóæíî öåëîå ÷èñëî îò " << minV
-            << " äî " << maxV << ". Ïîïðîáóéòå ñíîâà.\n";
+        cout << "  ÐžÑˆÐ¸Ð±ÐºÐ°: Ð½ÑƒÐ¶Ð½Ð¾ Ñ†ÐµÐ»Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð¾Ñ‚ " << minV
+            << " Ð´Ð¾ " << maxV << ". ÐŸÐ¾Ð¿Ñ€Ð¾Ð±ÑƒÐ¹Ñ‚Ðµ ÑÐ½Ð¾Ð²Ð°.\n";
     }
 }
 
@@ -71,19 +71,19 @@ int main()
 
     ReadConsoleSize();
 
-    int rectCount = readInt("×èñëî ïðÿìîóãîëüíèêîâ", 1, 10);
+    int rectCount = readInt("Ð§Ð¸ÑÐ»Ð¾ Ð¿Ñ€ÑÐ¼Ð¾ÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸ÐºÐ¾Ð²", 1, 10);
 
     int xs[10], ys[10], widths[10], heights[10];
 
     for (int k = 0; k < rectCount; ++k)
     {
-        cout << "\nÏðÿìîóãîëüíèê #" << k + 1 << ":\n";
+        cout << "\nÐŸÑ€ÑÐ¼Ð¾ÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸Ðº #" << k + 1 << ":\n";
 
         xs[k] = readInt("x", 0, SCREEN_WIDTH - 1);
         ys[k] = readInt("y", 0, SCREEN_HEIGHT - 1);
 
-        widths[k] = readInt("øèðèíà ïðÿìîóãîëüíèêà", 1, SCREEN_WIDTH - xs[k]);
-        heights[k] = readInt("âûñîòà ïðÿìîóãîëüíèêà", 1, SCREEN_HEIGHT - ys[k]);
+        widths[k] = readInt("ÑˆÐ¸Ñ€Ð¸Ð½Ð° Ð¿Ñ€ÑÐ¼Ð¾ÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸ÐºÐ°", 1, SCREEN_WIDTH - xs[k]);
+        heights[k] = readInt("Ð²Ñ‹ÑÐ¾Ñ‚Ð° Ð¿Ñ€ÑÐ¼Ð¾ÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸ÐºÐ°", 1, SCREEN_HEIGHT - ys[k]);
     }
 
     system("cls");
