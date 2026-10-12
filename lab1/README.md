@@ -27,7 +27,13 @@
 ## Скриншот
 task1:
 <img width="857" height="155" alt="image" src="https://github.com/user-attachments/assets/667b2d0b-d8aa-4b4d-8291-d58ab8834633" />
+
+
 task9:
 <img width="906" height="163" alt="image" src="https://github.com/user-attachments/assets/a3dce9e4-675f-4ae0-892b-8e4f757a6426" />
+
+
 task15:
+
+<img width="1047" height="279" alt="image" src="https://github.com/user-attachments/assets/281beb79-afc8-468c-ab95-18d835e9937d" />
 
